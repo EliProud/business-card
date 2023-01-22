@@ -1,0 +1,93 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-weight: bold;
+}
+
+.avatar {
+  --s: 15px; 
+  --b: 2px;  
+  --w: 200px; 
+  --c: #005f73;
+  
+  width: 150px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  padding: calc(2*var(--s));
+  --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0;
+  background:
+    linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
+    linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
+  outline: calc(var(--w)/2) solid transparent;
+  outline-offset: calc(var(--w)/-2 - 2*var(--s));
+  transition: .4s;
+  cursor: pointer;
+}
+img:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: calc(var(--s)/-2);
+  --_i: calc(100% - 2*var(--s));
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #e9d8a6;
+    color: #005f73;
+    border: 6px solid #713402;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #2b2839;
+    
+    
+        
+    /*
+    Challenge:
+    Find a color palette you like on Coolors.co
+    and use it in your business card.
+     */
+}
+
+.image {
+    width:100px
+}
+
+h3:hover {
+    background-color: paleturquoise;
+    border-radius: 25px;
+}
+
+p:hover {
+    background-color: palevioletred;
+    border-radius: 25px;
+}
+
+h4:hover {
+    background-color: palegreen;
+    border-radius: 25px;
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
